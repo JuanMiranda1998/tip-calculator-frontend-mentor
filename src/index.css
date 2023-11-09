@@ -1,0 +1,38 @@
+:root{
+  --clr-primary-strong-cyan: hsl(172, 67%, 45%);
+  --clr-neutral-very-dark-cyan: hsl(183, 100%, 15%);
+  --clr-neutral-dark-grayish-cyan: hsl(186, 14%, 43%);
+  --clr-neutral-grayish-cyan: hsl(184, 14%, 56%);
+  --clr-neutral-light-grayish-cyan: hsl(185, 41%, 84%);
+  --clr-neutral-very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+  --fw-bold: 700;
+  --ff-base: 'Space Mono', monospace;
+}
+*,*::before,*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img{
+  display: block;
+  max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6,p{
+  overflow-wrap: break-word;
+  line-height: 1.1;
+}
+ul,li{
+  list-style-type: none;
+  font: inherit;
+}
+button{
+  font: inherit;
+  border: none;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  font-family: var(--ff-base);
+  font-weight: var(--fw-bold);
+}

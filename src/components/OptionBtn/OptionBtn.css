@@ -1,0 +1,17 @@
+.numBtn {
+    padding: .5rem 0;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    background-color: var(--clr-neutral-very-dark-cyan);
+    color: white;
+    transition: all ease 200ms;
+}
+.numBtn:hover{
+    cursor: pointer;
+    background-color: hsl(173, 61%, 77%);
+    color: var(--clr-neutral-very-dark-cyan);
+}
+.active{
+    background-color: var(--clr-primary-strong-cyan);
+    color: var(--clr-neutral-very-dark-cyan);
+}

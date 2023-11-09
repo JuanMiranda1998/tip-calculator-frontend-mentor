@@ -1,0 +1,43 @@
+.buttonGroup{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    margin: 1rem auto;
+    gap: .75rem;
+}
+.numInput{
+    min-width: 120px;
+    padding: 0 .5rem;
+    text-align: right;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-family: inherit;
+    font-weight: var(--fw-bold);
+    background-color: var(--clr-neutral-very-light-grayish-cyan);
+    color: var(--clr-neutral-very-dark-cyan);
+}
+.numInput::placeholder{
+    text-align: center;
+    color: var(--clr-neutral-dark-grayish-cyan);
+    font-family: var(--ff-base);
+    font-weight: var(--fw-bold);
+}
+.numInput:hover{
+    cursor: pointer;
+    border: 2px solid var(--clr-primary-strong-cyan);
+}
+.numInput:focus{
+    outline-color: var(--clr-primary-strong-cyan);
+}
+.error:focus{
+    outline-color: hsl(8, 83%, 60%);
+}
+.error{
+    border: 2px solid hsl(8, 83%, 60%);
+}
+@media (min-width: 768px) {
+    .buttonGroup{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

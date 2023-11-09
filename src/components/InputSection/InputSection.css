@@ -1,0 +1,45 @@
+.textContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.errorMessage{
+    font-size: .75rem;
+    color: hsl(8, 83%, 60%);
+}
+.display{
+    position: relative;
+    border-radius: 5px; 
+}
+.icon{
+    position: absolute;
+    left: 15px;
+    bottom: 13px;
+    height: 20px;
+}
+.displayNum{
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    padding: .5rem 1rem;
+    text-align: right;
+    font-size: 1.25rem;
+    font-family: inherit;
+    background-color: var(--clr-neutral-very-light-grayish-cyan);
+    color: var(--clr-neutral-very-dark-cyan);
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+.displayNum:hover{
+    cursor: pointer;
+    border: 2px solid var(--clr-primary-strong-cyan);
+}
+.displayNum:focus{
+    outline-color: var(--clr-primary-strong-cyan);
+}
+.error:focus{
+    outline-color: hsl(8, 83%, 60%);
+}
+.error{
+    border: 2px solid hsl(8, 83%, 60%);
+}
